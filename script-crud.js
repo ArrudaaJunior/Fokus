@@ -22,7 +22,12 @@ function criarElementoTarefa(tarefa) {
     paragrafo.classList.add('app__section-task-list-item-description')
 
     const botao = document.createElement('button');
-    botao.classList.add('app_button-edit')
+    botao.classList.add('app_button-edit');
+
+    botao.onclick = () => {
+        const novaDescricao = prompt("Qual é o novo nome da tarefa?");
+        paragrafo.textContent = novaDescricao;
+    }
 
     const imagemDoBotao = document.createElement('img');
 
