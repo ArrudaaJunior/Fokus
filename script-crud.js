@@ -2,6 +2,7 @@ const botaoAdicionarTarefa = document.querySelector('.app__button--add-task');
 const formularioAdicionarTarefa = document.querySelector('.app__form-add-task');
 const textArea = document.querySelector('.app__form-textarea');
 const ulTarefas = document.querySelector('.app__section-task-list');
+const paragrafoDescricaoDaTarefa = document.querySelector('.app__section-active-task-description');
 
 const tarefas = JSON.parse(localStorage.getItem('tarefas')) || [];
 
@@ -29,9 +30,9 @@ function criarElementoTarefa(tarefa) {
     botao.classList.add('app_button-edit');
 
     botao.onclick = () => {
-        debugger
+        // debugger
         const novaDescricao = prompt("Qual é o novo nome da tarefa?");
-        console.log('Nova descrição da tarefa: ', novaDescricao)
+        // console.log('Nova descrição da tarefa: ', novaDescricao)
         if (novaDescricao) {
             paragrafo.textContent = novaDescricao;
             tarefa.descricao = novaDescricao;
@@ -40,13 +41,17 @@ function criarElementoTarefa(tarefa) {
     }
 
     const imagemDoBotao = document.createElement('img');
-
     imagemDoBotao.setAttribute('src', '/imagens/edit.png');
-
     botao.append(imagemDoBotao);
+    
     lista.append(svg);
     lista.append(paragrafo);
     lista.append(botao);
+
+    lista.onclick = () => {
+        paragrafoDescricaoDaTarefa.textContent = tarefa.descricao;
+        lista.classList.add('app__section-task-list-item-active');
+    }
 
     return lista;
 }
