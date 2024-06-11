@@ -20,7 +20,11 @@
   </tr>
   <tr>
     <td><img src="https://github.com/ArrudaaJunior/Fokus/assets/34192862/d4434ba5-17a5-4aaf-8efb-a35e468e1d3f" alt="imagem do projeto" width="500"></td>
-    <td><img src="https://github.com/ArrudaaJunior/Fokus/assets/34192862/0e0172cd-ca5c-4adf-9e30-980cd5fe68d5" alt="imagem do projeto" width="500"></td>
+    <td><img src="https://github.com/ArrudaaJunior/Fokus/assets/34192862/596d560b-cef9-4130-8f0d-d741ab5c53d1" alt="imagem do projeto" width="500"></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/ArrudaaJunior/Fokus/assets/34192862/a1ff7167-1795-46c4-92dd-a3720eb71346" alt="imagem do projeto" width="500"></td>
+    <td><img src="https://github.com/ArrudaaJunior/Fokus/assets/34192862/49f1aff6-8486-4d43-a704-d2daf8795777" alt="imagem do projeto" width="500"></td>
   </tr>
 </table>
 
@@ -31,6 +35,8 @@
 - **Controles de Início/Pausa**: Possui um botão para iniciar e pausar o temporizador, com ícones e textos que mudam dinamicamente para indicar o estado atual.
 - **Alertas Sonoros**: Emite sons específicos ao iniciar, pausar e quando o tempo termina.
 - **Interface Dinâmica**: A interface muda conforme o modo selecionado, exibindo diferentes mensagens motivacionais e imagens.
+- **Gerenciamento de Tarefas**: Adicione, edite e remova tarefas para organizar suas atividades durante os ciclos de Pomodoro.
+- **Persistência de Dados**: As tarefas são armazenadas no `localStorage` do navegador, garantindo que os dados permaneçam mesmo após fechar o navegador.
 
 ## ✔️ Técnicas e tecnologias utilizadas
 
@@ -45,6 +51,8 @@
 2. **Música de Fundo**: A música de fundo pode ser alternada com um botão de opção.
 3. **Contagem Regressiva**: O temporizador começa a contagem regressiva ao clicar no botão "Começar". Pode ser pausado a qualquer momento, clicando no botão "Pausar".
 4. **Notificação de Tempo Finalizado**: Quando o tempo acaba, um som de alerta é tocado e uma mensagem de notificação é exibida.
+5. **Gerenciamento de Tarefas**: Adicione novas tarefas, edite tarefas existentes e marque tarefas como concluídas.
+6. **Remoção de Tarefas**: Remova todas as tarefas ou apenas as concluídas usando os botões correspondentes.
 
 ### 🛠️ Como Usar
 
@@ -54,8 +62,12 @@
 4. Clique em "Começar" para iniciar o temporizador.
 5. Use o botão de alternar música para ligar ou desligar a música de fundo.
 6. Clique em "Pausar" para pausar o temporizador, se necessário.
+7. Adicione tarefas usando o botão "Adicionar Tarefa".
+8. Edite tarefas clicando no botão de edição ao lado da tarefa.
+9. Marque tarefas como concluídas clicando na tarefa desejada.
+10. Remova tarefas concluídas ou todas as tarefas usando os botões de remoção.
 
-
+Este projeto foi desenvolvido para ajudar a gerenciar o tempo de trabalho e melhorar a produtividade de forma simples e eficaz.
 
 ## Time
 
