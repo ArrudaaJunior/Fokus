@@ -35,7 +35,7 @@ musicaFocoInput.addEventListener('change', () => {
 
 // Adiciona ouvintes de evento para os botões de foco, descanso curto e descanso longo.
 focoButao.addEventListener('click', () => {
-    tempoDecorridoEmSegundos = 20;  // Define o tempo para 25 minutos.
+    tempoDecorridoEmSegundos = 1500;  // Define o tempo para 25 minutos.
     alterarContexto('foco');  // Altera o contexto para foco.
     focoButao.classList.add('active');  // Adiciona a classe 'active' ao botão de foco.
 });
